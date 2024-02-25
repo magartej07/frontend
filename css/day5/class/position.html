@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+        main, section, footer {
+            height: 100vh;
+            text-align: center;
+        }
+
+        main {
+            background-color: red;
+        }
+
+        section:nth-child(1) {
+            background-color: blue;
+        }
+
+        section:nth-child(2) {
+            background-color: green;
+        }
+
+        footer {
+            background-color: black;
+        }
+
+        .fixed {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main id="hero">
+        <h1>HI, My name is</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, nostrum!</p>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#testimonial">Testimonials</a></li>
+            <li><a href="#footer">Footer</a></li>
+        </ul>
+    </main>
+    <section id="about">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse commodi sint sequi sunt blanditiis perferendis. Error ipsam repudiandae vitae minima aspernatur sed enim saepe, tempora quia modi labore provident quidem odit! Exercitationem ducimus amet officia repellendus excepturi. Cumque illum vitae, magni doloremque voluptatum harum inventore alias rem quia nobis natus dolorum reiciendis explicabo quibusdam iusto corporis possimus qui blanditiis vel corrupti, suscipit eligendi amet quos? Pariatur corporis aliquid, dolorum possimus dolor doloremque repellat consequuntur aperiam architecto eveniet similique ab quam explicabo omnis. Dicta iusto quidem nulla saepe voluptatum amet eos corporis numquam error nostrum? Consequuntur iure fuga accusamus eligendi eaque numquam. Pariatur repudiandae, aspernatur nihil tempora maiores ratione unde ex aperiam nulla architecto dolor numquam incidunt, illo totam saepe dolorem, dicta rerum excepturi dolores alias adipisci. Fugit, placeat et facere laboriosam eius natus. Animi soluta, adipisci eveniet eum, repudiandae tenetur dolore assumenda velit qui quasi necessitatibus architecto vel ullam sed cumque vitae hic nihil quibusdam consectetur unde minima? Debitis laboriosam facilis harum alias voluptates blanditiis quasi dolorem enim perferendis natus molestias cupiditate, ipsa commodi animi recusandae quo. Error, aliquid? Quam, quo. Blanditiis odio perferendis doloribus impedit consequatur libero veritatis incidunt, ullam, similique, adipisci laboriosam quaerat debitis sit voluptate laborum repellat!
+        </p>
+    </section>
+
+    <section id="testimonial">
+        <h1>Testimonials</h1>
+    </section>
+    <footer id="footer">
+        <h1>Footer</h1>
+    </footer>
+
+
+    <a href="#hero" class="fixed">
+        Top
+    </a>
+</body>
+</html>

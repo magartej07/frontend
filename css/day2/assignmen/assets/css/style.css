@@ -1,0 +1,19 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+div{
+    width:400px;
+    padding:16px 24px;
+    background-color: beige;
+}
+button{
+    width: 90px;
+    border: none;
+    padding: 4px;
+    background-color: rgb(185, 185, 185);
+}
+
+a{
+    margin-left: 8px;
+}

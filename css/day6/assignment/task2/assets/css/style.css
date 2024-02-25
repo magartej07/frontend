@@ -1,0 +1,124 @@
+:root{
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    width: 460px;;
+    border: 1px solid white;
+    display: flex;
+    /* padding: 8px; */
+    border-radius: 16px;
+    box-shadow: 5px 5px 16px 0px hsl(207, 46%, 65%);
+} 
+.result__container, .summary__container{
+    flex-grow: 1;
+    width: calc(100% / 2);
+}
+.result__container{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    gap: 16px;
+    align-items: center;
+    padding: 24px;
+    background: linear-gradient(hsl(250, 97%, 62%), hsl(242, 81%, 37%) );
+    border-radius: 16px;
+}
+.result__title{
+    font-size: 16px;
+    color: hsl(251, 100%, 88%);
+}
+.result__marks{
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    height: 120px;
+    background-color: var(--Cobalt-blue);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    /* gap: 4px; */
+}
+.result__marks >h1{
+    font-size: 45px;
+}
+.result__marks >h5{
+    color: hsl(251, 100%, 88%);
+}
+.result__feedback{
+    font-size: 10px;
+    color: white;
+
+}
+.result__remark > p{
+    color: hsl(251, 100%, 88%);
+    font-size: 13px;
+    text-align: center;
+}
+.summary__container{
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+.summary__title{
+    font-size: 16px;
+}
+.features{
+    display: flex;
+    gap:8px;
+    border: none;
+    border-radius: 4px;
+    /* justify-content: space-between; */
+    align-items: center;
+
+}
+.icon{
+    width: 20%;;
+}
+.features1{
+    color: var(--light-red);
+    background-color: rgba(255, 87, 87, 0.09);;
+}
+.features2{
+    color: var(--orangey-yellow);
+}
+.features3{
+   color: var(--green-teal);
+}
+.features4{
+    color: var(--Cobalt-blue);
+}
+
+/* .icon__img{
+
+} */
+.feature{
+    display: flex;
+    justify-content: space-between;
+    /* width: calc(100% / 2); */
+}
+/* .feature__title{
+
+}
+,feature__mark{
+
+}
+.continue__btn{
+
+} */

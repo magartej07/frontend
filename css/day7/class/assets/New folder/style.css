@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(138, 71%, 73%);
+}
+.container{
+    display: grid;
+    
+    /* grid-template-columns: 200px 200px 200px; */
+    /* repeat function use to repeat value */
+    /* grid-template-columns: repeat(3,200px);  */
+    grid-template-columns: repeat(3,1fr); /*fr is unit */
+    height: 80vh;
+    grid-template-rows: repeat(2,200px); 
+}
+.item{
+    
+    background: blue;
+    color: white;
+    /* height: 100px; */
+    border: 1px solid red;
+}
+.item-1{
+    /* grid column use to merge column */
+    grid-column: 1/3; 
+    /* linear-gradient css gradient tool use to mix color */
+    background: linear-gradient(red , blue , yellow ); 
+}
+.item-2{
+    /* row column use to merge column */
+
+    grid-column: 3 / 4; 
+    grid-row: 1 / 3;
+    /* radial gradient use to mix color */
+    background: radial-gradient(circle, yellow, violet, pink);
+
+}

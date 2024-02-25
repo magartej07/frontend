@@ -1,0 +1,42 @@
+/* To import we use @symbol for eg: @import url""; */
+
+/* universal selector */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* name selectoe */
+p{
+    color: pink;
+    font-size: 30px;
+}
+
+/* class selector */
+.class1{
+    color: orange;
+}
+.class2{
+    color: black;
+}
+
+/* id selector */
+#id1{
+    background-color: pink;
+    font-size: 32px;
+    color: blueviolet;
+    width: 200px;
+    height:50px;
+}
+
+/* for grouping you need to keep , to selector */
+
+/*  padding */
+.padding{
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 12px;
+    padding-bottom: 15px;
+    background-color: bisque;
+    /* clockwise janxa hai */
+}

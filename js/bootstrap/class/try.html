@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+      integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Try</title>
+  </head>
+  <body>
+    <div id="main">hlo</div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      const jsonCard = document.querySelector("#main");
+      console.log(jsonCard);
+      const renderJson = async () => {
+        const promise = await fetch(
+          `https://jsonplaceholder.typicode.com/posts`
+        )
+          .then((res) => res.json())
+
+        if (promise && promise.length > 0) {
+          promise.forEach((arg) => {
+            jsonCard.innerHTML = `
+            <div class="card">
+                <h2 class="userId fs-5 fw-medium">${arg.userId}</h2>
+                <h2 class="id fs-5 fw-medium">${arg.id}</h2>
+                <h3 class="title text-secondary-emphasis">${arg.title}</h3>
+                <p class="desc text-primary">${arg.body}</p>
+                </div>
+            `;
+            //   main.appendChild(jsonCard);
+          })
+        }
+        // else{
+        //     console.log("not found p")
+        // }
+      };
+      // console.log(res)
+
+      renderJson();
+    </script>
+  </body>
+</html>

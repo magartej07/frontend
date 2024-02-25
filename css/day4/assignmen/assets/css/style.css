@@ -1,0 +1,58 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(49, 100%, 55%);
+    font-family: 'Outfit', sans-serif;
+}
+.card{
+    padding:20px;
+    background-color: hsl(0, 0%, 100%);
+    width: 320px;
+    margin: 90px auto;
+    border: 1px solid hsl(0, 0%, 0%);
+    border-radius: 14px;
+    box-shadow: 8px 8px 0 0;
+}
+.card__img{
+    color: black;
+    width: 277px;
+    border-radius: 14px;
+} 
+.learning{
+    margin: 16px 0px;
+    width: 68px;
+    height: 25px;
+    background-color: hsl(49, 100%, 55%);
+    font-family: 'Outfit', sans-serif;
+    border-radius: 4px;
+    border-style: none;
+    font-weight: bold;
+    text-align: center;
+}
+.date{
+    font-size: small;
+} 
+.title{
+    margin: 16px 0px;
+}
+.description{
+    color: hsla(0, 0%, 0%, 0.589);
+    font-size: small;
+    line-height: 1.5;
+}
+.heros{
+    margin: 20px 0px 10px;
+}
+.hero__img{
+    width: 35px;
+    margin-bottom: -12px;
+}
+.hero__name{
+    display: inline-block;
+    font-size: small;
+    font-weight: bolder;
+    margin-left: 10px;
+}

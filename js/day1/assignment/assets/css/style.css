@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(220, 18%, 95%);
+}
+.navbar{
+    background-color: hsl(241, 83%, 67%);
+    height: 80px;
+    border-bottom-left-radius: 42px;
+    padding: 16px 88px;
+}
+.logo > a{
+    text-decoration: none;
+    color: white;
+}
+.semiNavbar{
+    padding: 4px 16px;
+    /* border: 2px solid green; */
+    border-radius: 4px;
+    display: flex;
+    margin: 0px 86px;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-top: -25px;
+    background-color: #ffffff;
+}
+.findGroup, .locationGroup, .fullGroup{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    /* border-right: 1px solid rgba(0, 0, 0, 0.3); */
+}
+.findGroup > p, .locationGroup >p{
+    color: hsl(235, 0%, 76%);
+    font-size: 14px;
+}
+.fullGroup > .semiFullGroup >h3{
+    font-size: 14px;
+}
+.fa-solid{
+    color:  hsl(241, 57%, 56%);
+}
+.fa-square{
+    color: hsl(235, 0%, 76%);
+}
+.fullGroup{
+    /* justify-content: space-around; */
+    padding: 0px 24px;
+    display: flex;
+    justify-content: space-between;
+}
+.semiFullGroup{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.fullGroup > button{
+    background: blue;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    height: 34px;
+    width: 86px;
+    
+    /* margin-right: 0px; */
+}
+.main{
+    margin: 80px 86px 10px;
+    /* border: 1px solid green; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4, 200px);
+    gap: 55px 20px;
+}
+.card{
+    /* border: 1px solid blue; */
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.cardLogo{
+    margin-top:-50px;
+}
+.cardLogo > img{
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+}
+.cardDesc > .descType {
+    font-weight: 500;
+}
+.cardDesc > .descTime,.cardDesc > .descName{
+    font-weight: 500;
+    color: hsl(235, 0%, 76%);
+}
+.cardCountry{
+    color: blue;
+}
+.loadBtn{
+    background: blue;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    height: 34px;
+    width: 100px;
+    padding: 4px 8px;
+    margin: 40px auto;
+}

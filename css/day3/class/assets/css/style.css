@@ -1,0 +1,43 @@
+/* To import we use @symbol for eg: @import url""; */
+
+/* universal selector */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.box{
+    width: 400px;
+    /* for rgb */
+    /* background-color: rgb(125, 125, 163); */
+
+    /* for rgba a is stand for alpha which is opacity*/
+    /* background-color: rgba(125, 125, 163, 0.5); */
+
+    /* for hexrgb */
+    /* background-color: #f00; */
+
+    /* hsl  */
+    background-color: hsla(120, 84%, 50%, 0.541);
+
+    /* border */
+    /* border width */
+    border-left-width: 10px;
+    border-right-width: 5px;
+    border-top-width:8px;
+    /* border-style: solid !important; */
+    border-style: dotted ;
+    border-top-color: blueviolet;
+    border-left-color: rgb(229, 230, 229);
+    border-right-color: rgb(250, 5, 86);
+    /* for short form */
+    border: 4px solid rgb(146, 179, 159);
+    border-top: 2px dashed red;
+    border-right: 6px dotted blue;
+    border-bottom: 8px dashed pink;
+    border-left: 5px solid green;
+    margin: 0px auto;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    border-radius: 10px;
+}

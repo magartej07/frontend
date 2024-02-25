@@ -1,0 +1,68 @@
+/* To import we use @symbol for eg: @import url""; */
+
+/* universal selector */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+/* for em afnu parents ko fontsize herxa
+rem le root ko font size use garxa */
+html{
+    font-size: 20px;
+}
+.box{
+    font-size: 10px;
+    width: 40rem;
+    background-color: hsla(120, 84%, 50%, 0.541);
+    border: 2px solid red;
+    margin: 50px auto;
+    text-shadow: 0px 0px 2px 4px hsl(259, 13%, 72%);
+}
+.box__title{
+    text-shadow: 4px 0px 0px hsl(259, 78%, 38%);
+}
+p{
+    font-size: 2em;
+}
+
+/* pseudo class :*/
+.box__ca{
+    font-size: 1rem;
+    padding: 0.3rem 1rem;
+    border: 2px solid blue;
+    border-radius: 0.3rem;
+    color: white;
+    background-color: hsl(260, 67%, 42%);
+    
+}
+/* hover */
+.box__ca:hover{
+    /* background-color: hsl(260, 76%, 18%); */
+    cursor: pointer; /* crusor */
+   /* shadow */
+    box-shadow: -2px -2px 2px 4px hsl(259, 13%, 72%) ;/* x side ma lagni, y tala lagni default mathi lagna ni payo, kati blur garni, kati spread garni, color */
+}
+
+/* focus */
+/* .box__ca:focus{
+    border: 6px solid blue;
+} */
+
+/* link highlight */
+.box__link{
+    text-decoration: none;
+    color: blue;
+}
+/* .box__link:link{
+    color:red;
+} */
+.box__link:visited{
+    color:red;
+}
+.box__link:active{
+    color:rgb(54, 6, 143);
+}
+
+

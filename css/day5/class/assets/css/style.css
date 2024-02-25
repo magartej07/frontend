@@ -1,0 +1,72 @@
+/* To import we use @symbol for eg: @import url""; */
+
+/* universal selector */
+/* to create root variable -- important*/
+:root{
+    --primary-color: hsl(49, 100%, 55%);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: var(--primary-color);
+}
+/* position: absolute chai relative ko position ma depend wa anusar chalxa
+body by default absolute hunxa hai */
+.form{
+    /* max width yo vanda dherai janu vaya na */
+    max-width: 450px;
+    background-color: hsl(0, 0%, 100%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 30px 40px;
+    transform: translate(-50%, -50%);
+    border-radius: 8px ;
+    box-shadow: 10px 10px 0 0 black;
+    /* transform: translate(-50%, -50%) scale(2); */
+    /* transform: translateX(-50%) translateY(-50%); */
+    /* transform: x-axis, y-axis */
+    /* rotatexyz(degree value) */
+    /* scale() badauna lai use */
+}
+.input {
+    margin: 20px 0px;
+}
+.input__label{
+    font-weight: 500;
+}
+.input__field{
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    border: 1px solid hsl(0, 4%, 95%) ;
+    margin-top: 2px;
+}
+.input__field:focus{
+    outline: none;
+    box-shadow: 0px 0px 0px 2px hsl(0, 4%, 95%), 0px 0px 0px 5px hsl(49, 100%, 55%);
+}
+.form__button{
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.input__field:focus{
+    color: rgb(24,142,151);
+}
+.form__button:hover{
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+.form__button:active{
+    box-shadow: 0px 0px 0px 5px hsl(0, 4%, 95%), 0px 0px 0px 10px hsl(49, 100%, 55%); 
+}

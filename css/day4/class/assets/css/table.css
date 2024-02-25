@@ -1,0 +1,27 @@
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+table, td, tr, th{
+    border: 2px solid;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+td,th{
+    padding: 0.5rem;
+}  
+tr{
+    background-color: aqua;
+}
+/*  to select child > is used and for odd 2n-1 garay pani hunxa*/
+/* tbody > tr:nth-child(odd){
+    background-color:antiquewhite;
+} */
+tbody > tr:first-child{
+    background-color:antiquewhite;
+}
+tbody > tr:last-child{
+    background-color:antiquewhite;
+}

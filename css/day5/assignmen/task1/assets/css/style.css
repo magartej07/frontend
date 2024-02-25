@@ -1,0 +1,137 @@
+:root{
+    --primary-color: hsl(240, 10%, 23%);
+    --secondary-color: hsl(150, 100%, 73%);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: var(--primary-color);
+}
+.card{
+    background-color: hsl(240, 12%, 40%);
+    width: 350px;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+}
+.card__title{
+    letter-spacing: 4px;
+    font-size: smaller;
+    color: var(--secondary-color);
+    text-align: center;
+    margin-bottom: 8px;
+}
+.card__description{
+    color: hsl(0, 0%, 100%);
+    text-indent: 20px;
+    text-align: center;
+}
+.line__group{
+    margin: 8px 0px;
+}
+.line1{
+    display: inline-block;
+    width: 125px;
+    height: 1px;
+    background-color: hsla(0, 0%, 100%, 0.493);
+}
+.stand1{
+    display: inline-block;
+    width: 5px;
+    height: 15px;
+    border-radius: 4px;
+    background-color: hsl(0, 0%, 100%);
+    margin-bottom: -7px;
+    margin-left: 6px;
+}
+.stand2{
+    
+    display: inline-block;
+    width: 5px;
+    height: 15px;
+    border-radius: 4px;
+    background-color: hsl(0, 0%, 100%);
+    margin-bottom: -7px;
+    margin-right: 6px;
+}
+.line2{
+    display: inline-block;
+    width: 125px;
+    height: 1px;
+    background-color: hsla(0, 0%, 100%, 0.493);
+}
+.circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: var(--secondary-color);
+    /* position: relative; */
+    position: absolute;
+    bottom: -13%;
+    right: 43%;
+    /* transform: translate(-50%, -50%); */
+}
+.square{
+    background-color: var(--primary-color);
+    width: 23px;
+    height: 23px;
+    border-radius: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* position: relative; */
+}
+.min__circle1{
+    background-color: var(--secondary-color);
+    width: 5px;
+    height: 5px;
+    border-radius: 50px;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+}
+.min__circle2{
+    background-color: var(--secondary-color);
+    width: 5px;
+    height: 5px;
+    border-radius: 50px;
+    position: absolute;
+    top: 15%;
+    right: 15%;
+}
+.min__circle3{
+    background-color: var(--secondary-color);
+    width: 5px;
+    height: 5px;
+    border-radius: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.min__circle4{
+    background-color: var(--secondary-color);
+    width: 5px;
+    height: 5px;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 15%;
+    left: 15%;
+}
+.min__circle5{
+    background-color: var(--secondary-color);
+    width: 5px;
+    height: 5px;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 15%;
+    right: 15%;
+}

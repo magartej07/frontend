@@ -1,0 +1,88 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    color: aliceblue;
+    background-color: hsl(212, 92%, 10%);
+}
+.card{
+    color: aliceblue;
+    width: 280px;
+    padding:20px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: hsl(212, 89%, 15%);
+    border-radius: 8px;
+    box-shadow: 0px 8px 0px 10px hsla(212, 83%, 7%, 0.425);
+}
+.card__img{
+
+    width: 100%;
+    border-radius: 8px;
+}
+.card__title{
+    margin: 10px 0px;
+    font-size: medium;
+    
+}
+.card__description{
+    font-size: small;
+    color: hsl(211, 52%, 75%);
+}
+.group{
+    margin: 14px 0px;
+}
+.diamond{
+    display: inline-block;
+    color: hsl(175, 100%, 51%);
+    font-size: small;
+}
+.fa-diamond{
+    margin-right: 2px;
+}
+.time{
+    font-size:small;
+    display: inline-block;
+    color: hsl(211, 52%, 75%);
+    margin-left: 60px;
+}
+.fa-clock{
+    margin-right: 2px;
+}
+.line{
+    margin: 15px 0px;
+    width: 230px;
+    height: 1px;
+    background-color: hsla(0, 0%, 100%, 0.377);
+}
+.heros{
+    margin-top: 10px;
+    position: relative;
+}
+.hero_img{
+    width: 30px;
+    border-radius: 50px;
+}
+.hero_name1{
+   font-size: small;
+   display: inline-block;
+   position:absolute;
+    top: 40%;
+    left: 18%;
+    transform: translateY(-40%);
+    /* background-color: hsl(212, 89%, 15%); */
+    color: hsl(211, 52%, 75%);
+}
+.hero_name2{
+    font-size: small;
+    display: inline-block;
+    position:absolute;
+    top: 40%;
+    left: 50%; 
+    transform: translateY(-40%);
+}
